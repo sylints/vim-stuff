@@ -1,0 +1,30 @@
+" set colorscheme
+set background=dark
+colorscheme dracula
+set guifont=Lucida\ Sans\ Typewriter:h10
+
+" turn on line numbering
+set number 
+
+" turn on syntax coloring for files
+if !exists("g:syntax_on")
+	syntax enable
+endif
+
+
+" number of visual spaces per tab
+set tabstop=4
+
+" number of spaces in tab when editing
+set softtabstop=4
+
+" tabs are spaces
+set expandtab
+
+" load filetype-specific indent files
+filetype indent on
+
+" set indentation for scopes like { }
+set shiftwidth=4
+
+let g:rustfmt_autosave = 1
